@@ -1,5 +1,10 @@
 from typing import Self
 
+class TypeMismatchException(Exception):
+    def __init__(self) -> None:
+        message = "Type mismatch. Cannot complete operation"
+        super().__init__(message)
+
 class EmptyExpressionException(Exception):
     def __init__(self) -> None:
         message = "Empty Expression. Cannot complete operation"

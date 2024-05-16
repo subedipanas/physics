@@ -6,9 +6,6 @@ class Scalar:
     def __init__(self: Self, value: str, unit: Unit) -> None:
         self.value = value
         self.unit = unit
-
-    def round(self: Self, sig_figures) -> Self:
-        return Scalar(round(self.value, sig_figures), self.unit)
     
     def reciprocal(self: Self) -> Self:
         return Scalar(1/self.value, self.unit.reciprocal())

@@ -2,7 +2,7 @@ from typing import Self, Union, List
 from errors import InvalidUnitDefinition
 
 # index = ["-", "2", "3", "4"]
-superscript = ["\u207b", "\u00b9", "\u00b2", "\u00b3", "s4"]
+superscript = ["\u207b", "\u00b9", "\u00b2", "\u00b3", "\u2074"]
 
 class Unit:
     def __init__(self: Self, symbol: str = None, degree: int = 1, components: List[Self] = []) -> None:
